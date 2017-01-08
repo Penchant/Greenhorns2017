@@ -14,9 +14,12 @@
 #include "IntakeMech.h"
 #include "../RobotMap.h"
 
-IntakeMech::IntakeMech() : Subsystem("IntakeMech") {
-    intakeMotor = RobotMap::intakeMechIntakeMotor;
+void IntakeMech::Intake(float speed) {
+	intakeMotor->Set(speed);
+}
 
+IntakeMech::IntakeMech() : Subsystem("Intake"){
+	intakeMotor=RobotMap::intakeMechIntakeMotor;
 }
 
 void IntakeMech::InitDefaultCommand() {

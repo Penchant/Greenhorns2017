@@ -11,6 +11,7 @@
 
 #include "RobotMap.h"
 #include "LiveWindow/LiveWindow.h"
+#include "AHRS.h"
 #include "WPILib.h"
 
 /*
