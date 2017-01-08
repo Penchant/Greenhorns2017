@@ -12,9 +12,7 @@
 #include "Intake.h"
 
 
-Intake::Intake(): Command() {
-        // Use requires() here to declare subsystem dependencies
-    // eg. requires(Robot::chassis.get());
+
 Intake::Intake(float speed): Command() {
 	this->speed = speed;
 	Requires(Robot::intakeMech.get());
