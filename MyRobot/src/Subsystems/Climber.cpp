@@ -19,16 +19,13 @@ Climber::Climber() : Subsystem("Climber") {
 }
 
 void Climber::InitDefaultCommand() {
-	rightMotor->Set(0.0);
 	leftMotor->Set(0.0);
 }
 
 void Climber::Climb(){
-	rightMotor->Set(0.5);
 	leftMotor->Set(-0.5);
 }
 
 void Climber::ReverseClimb(){
-	rightMotor->Set(-0.5);
 	leftMotor->Set(0.5);
 }
