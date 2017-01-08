@@ -24,7 +24,9 @@ void Shooter::InitDefaultCommand() {
     // Set the default command for a subsystem here.
     // SetDefaultCommand(new MySpecialCommand());
 }
-
+void Shooter::Shoot(float speed){
+	shooterMotor->Set(speed);
+}
 
 // Put methods for controlling this subsystem
 // here. Call these from Commands.

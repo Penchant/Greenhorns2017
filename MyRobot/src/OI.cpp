@@ -27,7 +27,7 @@ OI::OI() {
     copilot.reset(new Joystick(1));
     
     shoot.reset(new JoystickButton(copilot.get(), 1));
-    shoot->WhileHeld(new Shooting());
+    shoot->WhenPressed(new Shooting());
     climb.reset(new JoystickButton(copilot.get(), 1));
     climb->WhileHeld(new ClimberControl());
     cogCollectorOpen.reset(new JoystickButton(copilot.get(), 1));
@@ -43,7 +43,7 @@ OI::OI() {
     SmartDashboard::PutData("Shooting", new Shooting());
     SmartDashboard::PutData("Intake", new Intake());
     SmartDashboard::PutData("ClimberControl", new ClimberControl());
-    SmartDashboard::PutData("CogCollectorControl", new CogCollectorControl(0.5));
+    SmartDashboard::PutData("CogCollectorControl", new CogCollectorControl(.5));
     SmartDashboard::PutData("Driving", new Driving());
     SmartDashboard::PutData("ChangeOrientation", new ChangeOrientation());
     SmartDashboard::PutData("Autonomous Command", new AutonomousCommand());

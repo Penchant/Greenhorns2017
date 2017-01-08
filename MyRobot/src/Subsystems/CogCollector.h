@@ -11,6 +11,7 @@
 
 #ifndef COG_COLLECTOR_H
 #define COG_COLLECTOR_H
+
 #include "Commands/Subsystem.h"
 #include "WPILib.h"
 
