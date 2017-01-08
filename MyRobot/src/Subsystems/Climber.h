@@ -8,9 +8,9 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in the future.
 
-
 #ifndef CLIMBER_H
 #define CLIMBER_H
+
 #include "Commands/Subsystem.h"
 #include "WPILib.h"
 
@@ -29,7 +29,6 @@ private:
 public:
 	Climber();
 	void InitDefaultCommand();
-
 };
 
 #endif

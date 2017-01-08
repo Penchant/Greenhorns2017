@@ -14,7 +14,6 @@
 
 #include "WPILib.h"
 
-
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
@@ -27,18 +26,23 @@ public:
 	static std::shared_ptr<SpeedController> drivetrainFrontRight;
 	static std::shared_ptr<SpeedController> drivetrainRearRight;
 	static std::shared_ptr<SpeedController> drivetrainRearLeft;
-	static std::shared_ptr<RobotDrive> drivetrainRobotDrive;
+	static std::shared_ptr<RobotDrive>      drivetrainRobotDrive;
 	static std::shared_ptr<SpeedController> drivetrainStrafe;
+
 	static std::shared_ptr<SpeedController> climberRightMotor;
 	static std::shared_ptr<SpeedController> climberLeftMotor;
-	static std::shared_ptr<RobotDrive> climberRobotDrive21;
-	static std::shared_ptr<Servo> cogCollectorLeftServo;
-	static std::shared_ptr<Servo> cogCollectorRightServo;
+	static std::shared_ptr<RobotDrive>      climberRobotDrive21;
+
+	static std::shared_ptr<Servo>          cogCollectorLeftServo;
+	static std::shared_ptr<Servo>          cogCollectorRightServo;
 	static std::shared_ptr<DoubleSolenoid> cogCollectorDoubleSolenoid;
+
 	static std::shared_ptr<SpeedController> shooterShooterMotor;
-	static std::shared_ptr<Encoder> shooterQuadratureEncoder;
+	static std::shared_ptr<Encoder>         shooterQuadratureEncoder;
+
 	static std::shared_ptr<SpeedController> intakeMechIntakeMotor;
 
+	static std::shared_ptr<Gyroscope> gyroscopeGyroscope;
 
 	static void init();
 };

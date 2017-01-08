@@ -12,23 +12,45 @@
 #include "RobotMap.h"
 #include "LiveWindow/LiveWindow.h"
 
-
+/*
+ * drive train subsystem
+ */
 std::shared_ptr<SpeedController> RobotMap::drivetrainFrontLeft;
 std::shared_ptr<SpeedController> RobotMap::drivetrainFrontRight;
 std::shared_ptr<SpeedController> RobotMap::drivetrainRearRight;
 std::shared_ptr<SpeedController> RobotMap::drivetrainRearLeft;
-std::shared_ptr<RobotDrive> RobotMap::drivetrainRobotDrive;
+std::shared_ptr<RobotDrive>      RobotMap::drivetrainRobotDrive;
 std::shared_ptr<SpeedController> RobotMap::drivetrainStrafe;
+
+/*
+ * climber subsystem
+ */
 std::shared_ptr<SpeedController> RobotMap::climberRightMotor;
 std::shared_ptr<SpeedController> RobotMap::climberLeftMotor;
-std::shared_ptr<RobotDrive> RobotMap::climberRobotDrive21;
-std::shared_ptr<Servo> RobotMap::cogCollectorLeftServo;
-std::shared_ptr<Servo> RobotMap::cogCollectorRightServo;
+std::shared_ptr<RobotDrive>      RobotMap::climberRobotDrive21;
+
+/*
+ * cog collector subsystem
+ */
+std::shared_ptr<Servo>          RobotMap::cogCollectorLeftServo;
+std::shared_ptr<Servo>          RobotMap::cogCollectorRightServo;
 std::shared_ptr<DoubleSolenoid> RobotMap::cogCollectorDoubleSolenoid;
+
+/*
+ * shooter subsystem
+ */
 std::shared_ptr<SpeedController> RobotMap::shooterShooterMotor;
-std::shared_ptr<Encoder> RobotMap::shooterQuadratureEncoder;
+std::shared_ptr<Encoder>         RobotMap::shooterQuadratureEncoder;
+
+/*
+ * intake mech subsystem
+ */
 std::shared_ptr<SpeedController> RobotMap::intakeMechIntakeMotor;
 
+/*
+ * gyroscope subsystem
+ */
+std::shared_ptr<Gyroscope> RobotMap::gyroscopeGyroscope;
 
 void RobotMap::init() {
     LiveWindow *lw = LiveWindow::GetInstance();
