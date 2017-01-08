@@ -11,6 +11,8 @@
 
 #include "RobotMap.h"
 #include "LiveWindow/LiveWindow.h"
+#include "AHRS.h"
+#include "WPILib.h"
 
 /*
  * drive train subsystem
@@ -114,6 +116,6 @@ void RobotMap::init() {
     intakeMechIntakeMotor.reset(new Talon(10));
     lw->AddActuator("IntakeMech", "IntakeMotor", std::static_pointer_cast<Talon>(intakeMechIntakeMotor));
     
-   // drivetrainNavX.reset( new AHRS(SPI::Port::kMXP));
+    drivetrainNavX.reset( new AHRS(SPI::Port::kMXP));
 
 }

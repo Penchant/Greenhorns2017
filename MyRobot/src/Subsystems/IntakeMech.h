@@ -27,6 +27,7 @@ private:
 
 public:
 	IntakeMech();
+	void Intake(float speed);
 	void InitDefaultCommand();
 };
 

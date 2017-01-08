@@ -23,9 +23,7 @@
  */
 class Intake: public Command {
 public:
-	Intake();
-
-
+	Intake(float speed = .5);
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();
@@ -33,7 +31,7 @@ public:
 	virtual void Interrupted();
 
 private:
-
+	float speed;
 };
 
 #endif

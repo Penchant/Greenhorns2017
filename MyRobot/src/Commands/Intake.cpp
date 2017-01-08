@@ -12,9 +12,9 @@
 #include "Intake.h"
 
 
-Intake::Intake(): Command() {
-        // Use requires() here to declare subsystem dependencies
-    // eg. requires(Robot::chassis.get());
+Intake::Intake(float speed): Command() {
+	this->speed = speed;
+	Requires(Robot::intakeMech.get());
 }
 
 
@@ -25,8 +25,9 @@ void Intake::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void Intake::Execute() {
-
+	Robot::intakeMech->Intake(speed);
 }
+
 
 // Make this return true when this Command no longer needs to run execute()
 bool Intake::IsFinished() {
@@ -35,7 +36,7 @@ bool Intake::IsFinished() {
 
 // Called once after isFinished returns true
 void Intake::End() {
-
+	Robot::intakeMech->Intake(0);
 }
 
 // Called when another command which requires one or more of the same
