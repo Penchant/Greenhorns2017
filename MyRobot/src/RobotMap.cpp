@@ -46,7 +46,7 @@ std::shared_ptr<Encoder>         RobotMap::shooterQuadratureEncoder;
  * intake mech subsystem
  */
 std::shared_ptr<SpeedController> RobotMap::intakeMechIntakeMotor;
-std::shared_ptr<AHRS> RobotMap::drivetrainNavX;
+std::shared_ptr<AHRS> 			 RobotMap::drivetrainNavX;
 
 /*
  * gyroscope subsystem

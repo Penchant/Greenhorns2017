@@ -26,15 +26,9 @@ private:
 	std::shared_ptr<RobotDrive> robotDrive21;
 public:
 	Climber();
-<<<<<<< HEAD
 	void InitDefaultCommand();
-
-=======
-	void InitDefaultCommand();
->>>>>>> eb74f2128d490fc1587a93f6920d47e115ae8e8d
 	void Climb();
 	void ReverseClimb();
-
 };
 
 #endif
