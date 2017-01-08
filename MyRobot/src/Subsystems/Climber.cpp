@@ -18,14 +18,13 @@ Climber::Climber() : Subsystem("Climber") {
     robotDrive21 = RobotMap::climberRobotDrive21;
 }
 
+// Initializes the Motor to a speed of 0 (or it starts by not running)
 void Climber::InitDefaultCommand() {
 	leftMotor->Set(0.0);
 }
 
+// When the operator desires to climb, the motor will reverse at a speed of 0.5
 void Climber::Climb(){
 	leftMotor->Set(-0.5);
 }
 
-void Climber::ReverseClimb(){
-	leftMotor->Set(0.5);
-}
