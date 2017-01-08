@@ -50,7 +50,7 @@ std::shared_ptr<SpeedController> RobotMap::intakeMechIntakeMotor;
 /*
  * gyroscope subsystem
  */
-std::shared_ptr<Gyroscope> RobotMap::gyroscopeGyroscope;
+std::shared_ptr<ADXRS450_Gyro> RobotMap::gyroscopeGyroscope;
 
 void RobotMap::init() {
     LiveWindow *lw = LiveWindow::GetInstance();

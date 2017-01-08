@@ -18,6 +18,7 @@ std::shared_ptr<Shooter> Robot::shooter;
 std::shared_ptr<IntakeMech> Robot::intakeMech;
 std::unique_ptr<OI> Robot::oi;
 
+std::unique_ptr<Gyroscope> Robot::gyroscope;
 
 void Robot::RobotInit() {
 	RobotMap::init();
@@ -26,6 +27,8 @@ void Robot::RobotInit() {
     cogCollector.reset(new CogCollector());
     shooter.reset(new Shooter());
     intakeMech.reset(new IntakeMech());
+
+    gyroscope.reset(new Gyroscope());
 
 	// This MUST be here. If the OI creates Commands (which it very likely
 	// will), constructing it during the construction of CommandBase (from
@@ -37,7 +40,7 @@ void Robot::RobotInit() {
 	// instantiate the command used for the autonomous period
 	autonomousCommand.reset(new AutonomousCommand());
 
-  }
+ }
 
 /**
  * This function is called when the disabled button is hit.
