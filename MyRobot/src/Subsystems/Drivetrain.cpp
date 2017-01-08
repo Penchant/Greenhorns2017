@@ -8,9 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in the future.
 
-
-
-
 #include "Drivetrain.h"
 #include "../RobotMap.h"
 
@@ -21,7 +18,6 @@ Drivetrain::Drivetrain() : Subsystem("Drivetrain") {
     rearLeft = RobotMap::drivetrainRearLeft;
     robotDrive = RobotMap::drivetrainRobotDrive;
     strafe = RobotMap::drivetrainStrafe;
-
     navX = RobotMap::drivetrainNavX;
 }
 
@@ -29,7 +25,6 @@ void Drivetrain::InitDefaultCommand() {
     // Set the default command for a subsystem here.
     // SetDefaultCommand(new MySpecialCommand());
 }
-
 
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
