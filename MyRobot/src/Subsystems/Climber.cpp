@@ -9,8 +9,6 @@
 // it from being updated in the future.
 
 
-
-
 #include "Climber.h"
 #include "../RobotMap.h"
 
@@ -21,10 +19,16 @@ Climber::Climber() : Subsystem("Climber") {
 }
 
 void Climber::InitDefaultCommand() {
-
+	rightMotor->Set(0.0);
+	leftMotor->Set(0.0);
 }
 
+void Climber::Climb(){
+	rightMotor->Set(0.5);
+	leftMotor->Set(-0.5);
+}
 
-// Put methods for controlling this subsystem
-// here. Call these from Commands.
-
+void Climber::ReverseClimb(){
+	rightMotor->Set(-0.5);
+	leftMotor->Set(0.5);
+}
