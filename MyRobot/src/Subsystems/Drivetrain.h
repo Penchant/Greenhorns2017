@@ -34,6 +34,7 @@ public:
 	Drivetrain();
 	void DriveWithJoystick(std::shared_ptr<Joystick>);
 	void InitDefaultCommand();
+	int orient;
 };
 
 #endif

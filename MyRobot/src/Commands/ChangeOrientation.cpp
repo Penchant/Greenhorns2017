@@ -26,7 +26,7 @@ void ChangeOrientation::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void ChangeOrientation::Execute() {
-
+	Robot::drivetrain->orient *= -1;
 }
 
 // Make this return true when this Command no longer needs to run execute()
