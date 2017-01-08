@@ -27,8 +27,14 @@ private:
 public:
 	Climber();
 	void InitDefaultCommand();
+<<<<<<< HEAD
 	void Climb();
-	void ReverseClimb();
+=======
+//<<<<<<< HEAD
+//=======
+	void Climb();
+//>>>>>>> a152a434aeb65290d52ae3b553a38157d186d70d
+>>>>>>> 7b2fb02f28efc12ec496ab4c9642dbc85c3d1150
 };
 
 #endif
