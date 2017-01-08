@@ -21,7 +21,6 @@ Drivetrain::Drivetrain() : Subsystem("Drivetrain") {
     this->orient = -1;
     navX = RobotMap::drivetrainNavX;
 
-}
 
 void Drivetrain::InitDefaultCommand() {
     // Set the default command for a subsystem here.

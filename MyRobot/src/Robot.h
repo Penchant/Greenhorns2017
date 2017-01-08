@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in the future.
 
-
 #ifndef _ROBOT_H
 #define _ROBOT_H
 
@@ -23,7 +22,7 @@
 #include "Subsystems/Drivetrain.h"
 #include "Subsystems/IntakeMech.h"
 #include "Subsystems/Shooter.h"
-
+#include "Subsystems/Gyroscope.h"
 
 #include "OI.h"
 
@@ -37,6 +36,7 @@ public:
     static std::shared_ptr<CogCollector> cogCollector;
     static std::shared_ptr<Shooter> shooter;
     static std::shared_ptr<IntakeMech> intakeMech;
+    static std::shared_ptr<Gyroscope> gyroscope;
 
 	virtual void RobotInit();
 	virtual void DisabledInit();
@@ -47,4 +47,5 @@ public:
 	virtual void TeleopPeriodic();
 	virtual void TestPeriodic();
 };
+
 #endif

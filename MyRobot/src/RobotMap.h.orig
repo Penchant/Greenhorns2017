@@ -42,11 +42,14 @@ public:
 	static std::shared_ptr<Encoder>         shooterQuadratureEncoder;
 
 	static std::shared_ptr<SpeedController> intakeMechIntakeMotor;
+	static std::shared_ptr<AHRS> drivetrainNavX;
 
-	static std::shared_ptr<ADXRS450_Gyro> gyroscopeADXRS450;
-	static std::shared_ptr<AHRS>          gyroscopeNavX;
+<<<<<<< HEAD
+	static std::shared_ptr<ADXRS450_Gyro> gyroscopeGyroscope;
+=======
+//	static std::shared_ptr<Gyroscope> gyroscopeGyroscope;
+>>>>>>> c2e20505e377b2775f8f4199e5e56c5c6e1f1ba0
 
 	static void init();
 };
-
 #endif

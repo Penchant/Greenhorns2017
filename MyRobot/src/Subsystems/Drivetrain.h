@@ -28,7 +28,11 @@ private:
 	std::shared_ptr<SpeedController> rearLeft;
 	std::shared_ptr<RobotDrive> robotDrive;
 	std::shared_ptr<SpeedController> strafe;
-	std::shared_ptr<AHRS> navX;
+
+	/*
+	 * this is now part of Gyroscope subsystem
+	 */
+	//std::shared_ptr<AHRS> navX;
 
 public:
 	Drivetrain();

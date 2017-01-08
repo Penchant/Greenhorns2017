@@ -8,9 +8,9 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in the future.
 
+#ifndef CLIMBER_H
+#define CLIMBER_H
 
-#ifndef INTAKEMECH_H
-#define INTAKEMECH_H
 #include "Commands/Subsystem.h"
 #include "WPILib.h"
 
@@ -19,16 +19,23 @@
  *
  * @author ExampleAuthor
  */
-class IntakeMech: public Subsystem {
+class Climber: public Subsystem {
 private:
-	// It's desirable that everything possible is private except
-	// for methods that implement subsystem capabilities
-	std::shared_ptr<SpeedController> intakeMotor;
-
+	std::shared_ptr<SpeedController> rightMotor;
+	std::shared_ptr<SpeedController> leftMotor;
+	std::shared_ptr<RobotDrive> robotDrive21;
 public:
-	IntakeMech();
+	Climber();
 	void InitDefaultCommand();
-	void Intake();
+<<<<<<< HEAD
+
+	void Climb();
+	void ReverseClimb();
+
+
+=======
+	void Climb();
+>>>>>>> c2e20505e377b2775f8f4199e5e56c5c6e1f1ba0
 };
 
 #endif
