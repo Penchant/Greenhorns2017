@@ -32,6 +32,7 @@ private:
 
 public:
 	Drivetrain();
+	void DriveWithJoystick(std::shared_ptr<Joystick>);
 	void InitDefaultCommand();
 };
 

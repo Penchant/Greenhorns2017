@@ -27,10 +27,10 @@ private:
 public:
 	Climber();
 	void InitDefaultCommand();
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 	void Climb();
->>>>>>> a152a434aeb65290d52ae3b553a38157d186d70d
+//>>>>>>> a152a434aeb65290d52ae3b553a38157d186d70d
 };
 
 #endif

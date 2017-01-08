@@ -25,7 +25,7 @@ void Driving::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void Driving::Execute() {
-
+	Robot::drivetrain->DriveWithJoystick(Robot::oi->getDriver());
 }
 
 // Make this return true when this Command no longer needs to run execute()
