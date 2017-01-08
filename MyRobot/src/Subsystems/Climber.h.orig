@@ -27,7 +27,6 @@ private:
 public:
 	Climber();
 	void InitDefaultCommand();
-<<<<<<< HEAD
 	void Climb();
 =======
 //<<<<<<< HEAD

@@ -24,7 +24,9 @@ void IntakeMech::InitDefaultCommand() {
     // SetDefaultCommand(new MySpecialCommand());
 }
 
-
+void IntakeMech::Intake() {
+	intakeMotor->Set(.5);
+}
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 

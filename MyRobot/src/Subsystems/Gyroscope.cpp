@@ -2,7 +2,8 @@
 #include "../RobotMap.h"
 
 Gyroscope::Gyroscope() : Subsystem("Gyroscope") {
-//	gyroz = RobotMap::gyroscopeGyroscope;
+	gyroz = RobotMap::gyroscopeADXRS450;
+	gyrox = RobotMap::gyroscopeNavX;
 }
 
 void Gyroscope::InitDefaultCommand(void) {
