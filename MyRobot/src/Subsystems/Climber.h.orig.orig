@@ -8,36 +8,34 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in the future.
 
-#ifndef DRIVETRAIN_H
-#define DRIVETRAIN_H
+#ifndef CLIMBER_H
+#define CLIMBER_H
+
 #include "Commands/Subsystem.h"
 #include "WPILib.h"
-#include "AHRS.h"
+
 /**
  *
  *
  * @author ExampleAuthor
  */
-class Drivetrain: public Subsystem {
+class Climber: public Subsystem {
 private:
-	// It's desirable that everything possible is private except
-	// for methods that implement subsystem capabilities
-	std::shared_ptr<SpeedController> frontLeft;
-	std::shared_ptr<SpeedController> frontRight;
-	std::shared_ptr<SpeedController> rearRight;
-	std::shared_ptr<SpeedController> rearLeft;
-	std::shared_ptr<RobotDrive> robotDrive;
-	std::shared_ptr<SpeedController> strafe;
-
-	/*
-	 * this is now part of Gyroscope subsystem
-	 */
-	//std::shared_ptr<AHRS> navX;
-
+	std::shared_ptr<SpeedController> rightMotor;
+	std::shared_ptr<SpeedController> leftMotor;
+	std::shared_ptr<RobotDrive> robotDrive21;
 public:
-	Drivetrain();
-	void DriveWithJoystick(std::shared_ptr<Joystick>);
+	Climber();
 	void InitDefaultCommand();
+<<<<<<< HEAD
+
+	void Climb();
+	void ReverseClimb();
+
+
+=======
+	void Climb();
+>>>>>>> c2e20505e377b2775f8f4199e5e56c5c6e1f1ba0
 };
 
 #endif

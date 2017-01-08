@@ -18,7 +18,7 @@ std::shared_ptr<Shooter> Robot::shooter;
 std::shared_ptr<IntakeMech> Robot::intakeMech;
 std::unique_ptr<OI> Robot::oi;
 
-std::unique_ptr<Gyroscope> Robot::gyroscope;
+std::shared_ptr<Gyroscope> Robot::gyroscope;
 
 void Robot::RobotInit() {
 	RobotMap::init();

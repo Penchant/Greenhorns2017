@@ -18,7 +18,8 @@ Drivetrain::Drivetrain() : Subsystem("Drivetrain") {
     rearLeft = RobotMap::drivetrainRearLeft;
     robotDrive = RobotMap::drivetrainRobotDrive;
     strafe = RobotMap::drivetrainStrafe;
-    navX = RobotMap::drivetrainNavX;
+
+    //navX = RobotMap::drivetrainNavX; // added to Gyroscope
 }
 
 void Drivetrain::InitDefaultCommand() {
