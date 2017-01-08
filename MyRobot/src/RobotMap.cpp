@@ -51,7 +51,7 @@ std::shared_ptr<AHRS> 			 RobotMap::drivetrainNavX;
 /*
  * gyroscope subsystem
  */
-std::shared_ptr<Gyroscope> RobotMap::gyroscopeGyroscope;
+//std::shared_ptr<Gyroscope> RobotMap::gyroscopeGyroscope;
 
 void RobotMap::init() {
     LiveWindow *lw = LiveWindow::GetInstance();

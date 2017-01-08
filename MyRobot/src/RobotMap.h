@@ -44,7 +44,7 @@ public:
 	static std::shared_ptr<SpeedController> intakeMechIntakeMotor;
 	static std::shared_ptr<AHRS> drivetrainNavX;
 
-	static std::shared_ptr<Gyroscope> gyroscopeGyroscope;
+//	static std::shared_ptr<Gyroscope> gyroscopeGyroscope;
 
 	static void init();
 };

@@ -26,6 +26,10 @@ void Drivetrain::InitDefaultCommand() {
     // SetDefaultCommand(new MySpecialCommand());
 }
 
+void Drivetrain::DriveWithJoystick(std::shared_ptr<Joystick> joy){
+	robotDrive->ArcadeDrive(joy->GetY()*-1, joy->GetX());
+}
+
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
