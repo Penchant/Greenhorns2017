@@ -15,6 +15,7 @@
 Intake::Intake(): Command() {
         // Use requires() here to declare subsystem dependencies
     // eg. requires(Robot::chassis.get());
+	Requires(Robot::intakeMech.get());
 }
 
 
@@ -25,7 +26,7 @@ void Intake::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void Intake::Execute() {
-
+	Robot::intakeMech->Intake();
 }
 
 // Make this return true when this Command no longer needs to run execute()

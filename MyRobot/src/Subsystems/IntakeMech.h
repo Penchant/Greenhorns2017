@@ -28,6 +28,7 @@ private:
 public:
 	IntakeMech();
 	void InitDefaultCommand();
+	void Intake();
 };
 
 #endif

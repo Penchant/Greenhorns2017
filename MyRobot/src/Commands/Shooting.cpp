@@ -12,9 +12,10 @@
 #include "Shooting.h"
 
 
-Shooting::Shooting(): Command() {
+Shooting::Shooting(float speed): Command() {
         // Use requires() here to declare subsystem dependencies
     // eg. requires(Robot::chassis.get());
+	this->speed = speed;
 	Requires(Robot::shooter.get());
 }
 
@@ -26,17 +27,17 @@ void Shooting::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void Shooting::Execute() {
-
+	Robot::shooter->Shoot(speed);
 }
 
 // Make this return true when this Command no longer needs to run execute()
 bool Shooting::IsFinished() {
-    return false;
+    return true;
 }
 
 // Called once after isFinished returns true
 void Shooting::End() {
-
+	Robot::shooter->Shoot(0);
 }
 
 // Called when another command which requires one or more of the same

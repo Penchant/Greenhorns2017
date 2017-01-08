@@ -23,7 +23,7 @@
  */
 class Shooting: public Command {
 public:
-	Shooting();
+	Shooting(float speed =.5);
 
 
 	virtual void Initialize();
@@ -33,6 +33,7 @@ public:
 	virtual void Interrupted();
 
 private:
+	float speed;
 
 };
 

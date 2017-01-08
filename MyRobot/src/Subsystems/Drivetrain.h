@@ -12,7 +12,7 @@
 #define DRIVETRAIN_H
 #include "Commands/Subsystem.h"
 #include "WPILib.h"
-
+#include "AHRS.h"
 /**
  *
  *
@@ -28,6 +28,7 @@ private:
 	std::shared_ptr<SpeedController> rearLeft;
 	std::shared_ptr<RobotDrive> robotDrive;
 	std::shared_ptr<SpeedController> strafe;
+	std::shared_ptr<AHRS> navX;
 
 public:
 	Drivetrain();
