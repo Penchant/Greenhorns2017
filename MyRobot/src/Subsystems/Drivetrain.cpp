@@ -18,8 +18,14 @@ Drivetrain::Drivetrain() : Subsystem("Drivetrain") {
     rearLeft = RobotMap::drivetrainRearLeft;
     robotDrive = RobotMap::drivetrainRobotDrive;
     strafe = RobotMap::drivetrainStrafe;
+<<<<<<< HEAD
 
     //navX = RobotMap::drivetrainNavX; // added to Gyroscope
+=======
+    orient = -1;
+    navX = RobotMap::drivetrainNavX;
+
+>>>>>>> 6f9831f71a467890abc5d61bd92c8aea2e78d370
 }
 
 void Drivetrain::InitDefaultCommand() {
@@ -28,7 +34,7 @@ void Drivetrain::InitDefaultCommand() {
 }
 
 void Drivetrain::DriveWithJoystick(std::shared_ptr<Joystick> joy){
-	robotDrive->ArcadeDrive(joy->GetY()*-1, joy->GetX());
+	robotDrive->ArcadeDrive(joy->GetY()*orient, joy->GetX());
 }
 
 // Put methods for controlling this subsystem
