@@ -29,6 +29,7 @@ private:
 public:
 	Shooter();
 	void InitDefaultCommand();
+	void Shoot(float);
 };
 
 #endif

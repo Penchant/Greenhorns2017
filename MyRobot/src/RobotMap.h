@@ -13,6 +13,7 @@
 #define ROBOTMAP_H
 
 #include "WPILib.h"
+#include "AHRS.h"
 
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
@@ -41,6 +42,7 @@ public:
 	static std::shared_ptr<Encoder>         shooterQuadratureEncoder;
 
 	static std::shared_ptr<SpeedController> intakeMechIntakeMotor;
+	static std::shared_ptr<AHRS> drivetrainNavX;
 
 	static std::shared_ptr<Gyroscope> gyroscopeGyroscope;
 

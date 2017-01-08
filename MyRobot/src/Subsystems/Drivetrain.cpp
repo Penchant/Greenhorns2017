@@ -18,6 +18,7 @@ Drivetrain::Drivetrain() : Subsystem("Drivetrain") {
     rearLeft = RobotMap::drivetrainRearLeft;
     robotDrive = RobotMap::drivetrainRobotDrive;
     strafe = RobotMap::drivetrainStrafe;
+    navX = RobotMap::drivetrainNavX;
 }
 
 void Drivetrain::InitDefaultCommand() {

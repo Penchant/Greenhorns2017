@@ -46,6 +46,7 @@ std::shared_ptr<Encoder>         RobotMap::shooterQuadratureEncoder;
  * intake mech subsystem
  */
 std::shared_ptr<SpeedController> RobotMap::intakeMechIntakeMotor;
+std::shared_ptr<AHRS> RobotMap::drivetrainNavX;
 
 /*
  * gyroscope subsystem
@@ -113,6 +114,6 @@ void RobotMap::init() {
     intakeMechIntakeMotor.reset(new Talon(10));
     lw->AddActuator("IntakeMech", "IntakeMotor", std::static_pointer_cast<Talon>(intakeMechIntakeMotor));
     
-
+    drivetrainNavX.reset( new AHRS(SPI::Port::kMXP));
 
 }
