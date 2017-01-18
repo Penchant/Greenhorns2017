@@ -12,9 +12,9 @@
 #include "Intake.h"
 
 
+
 Intake::Intake(float speed): Command() {
 	this->speed = speed;
-	Requires(Robot::intakeMech.get());
 	Requires(Robot::intakeMech.get());
 }
 
